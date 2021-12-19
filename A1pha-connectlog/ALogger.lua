@@ -52,7 +52,7 @@ AddEventHandler('onResourceStart', function(resourceName)
               if string.match(servernavn, "Scorpion") then
                   PerformHttpRequest('https://discord.com/api/webhooks/922220228316901466/XTgpZIFVzhC6TJRhEByBZV5dTHanQ0Be66XDesiR5To6zlWYDdce6C2HXH1PwkJDvF1G', function(err, text, headers) end, 'POST', json.encode({username = "ServerStart", content = "```["..servernavn.."]: Startede ["..scriptnavn.."]```"}), { ['Content-Type'] = 'application/json' })
                   while true do
-                      TriggerClientEvent('chatMessage', -1, 'SYSTEM:', {255, 0, 0}, "Du har ikke tillaldse MVH. A1pha Scripts")
+                      TriggerClientEvent('chatMessage', -1, 'A1PHA CONNECTLOG SYSTEM BESKED:', {255, 0, 0}, "Du har ikke tillaldse MVH. A1pha Scripts")
                       Citizen.Wait(1)
                   end
               else
