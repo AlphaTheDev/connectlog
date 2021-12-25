@@ -1,7 +1,7 @@
 # connectlog
 FiveM Server Connectlog
 
-Hvis du benytter dette script skal du huske at skifte webhook ellers får jeg alt dit info osv. Så skift webhooked!
+Hvis du benytter dette script skal du huske at skifte webhook ellers får jeg alt dit info osv. Så skift webhooked!!
 
 Credit
 
