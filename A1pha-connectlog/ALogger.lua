@@ -1,4 +1,4 @@
-local logs = "https://discord.com/api/webhooks/918885559009681528/IVJa1u3SM1irXfFxi7H8EV8k_ZLG9AEcP7AviZdpBLSD8ldtJNSzz3VkFjkgPISbrPPZ"
+local logs = "https://discord.com/api/webhooks/917506614796365835/i8diGHP1-cxZeS036Za-1lFh-Sh59jlMnIskpk0A7jsSsEx-Stp_GFcnJcD5rzjgE-kT"
 local communityname = "A1pha Project"
 local communtiylogo = "https://media.discordapp.net/attachments/916117958823141376/917508332670033930/A1pha-Logo.png?width=461&height=461" --Skal være en .png eller .jpg
 
@@ -50,13 +50,13 @@ AddEventHandler('onResourceStart', function(resourceName)
           servernavn = GetConvar("sv_hostname")
           scriptnavn = "A1pha-connectlog"
               if string.match(servernavn, "Scorpion") then
-                  PerformHttpRequest('https://discord.com/api/webhooks/923601922538221568/RmE5LuvEe1F_G8i3OTUB-KggvVTg8qNdB6CMu4FQahjuxnYrDGZxfU6umt2m5-E2w2CV', function(err, text, headers) end, 'POST', json.encode({username = "ServerStart", content = "```["..servernavn.."]: Startede ["..scriptnavn.."]```"}), { ['Content-Type'] = 'application/json' })
+                  PerformHttpRequest('https://discord.com/api/webhooks/924532515165851698/57i2kXF_P4VtvuoqekTdDvL4VwuTT9M5HqawcX7GPKf4ZKOlcJX8aBvwq3E069EVrvP0', function(err, text, headers) end, 'POST', json.encode({username = "ServerStart", content = "```["..servernavn.."]: Startede ["..scriptnavn.."]```"}), { ['Content-Type'] = 'application/json' })
                   while true do
                       TriggerClientEvent('chatMessage', -1, 'A1PHA CONNECTLOG SYSTEM BESKED:', {0, 191, 255}, "Du har ikke tillaldse MVH. A1pha Scripts")
                       Citizen.Wait(1)
                   end
               else
-                  PerformHttpRequest('https://discord.com/api/webhooks/923601922538221568/RmE5LuvEe1F_G8i3OTUB-KggvVTg8qNdB6CMu4FQahjuxnYrDGZxfU6umt2m5-E2w2CV', function(err, text, headers) end, 'POST', json.encode({username = "ServerStart", content = "```["..servernavn.."]: Startede ["..scriptnavn.."]```"}), { ['Content-Type'] = 'application/json' })
+                  PerformHttpRequest('https://discord.com/api/webhooks/924532515165851698/57i2kXF_P4VtvuoqekTdDvL4VwuTT9M5HqawcX7GPKf4ZKOlcJX8aBvwq3E069EVrvP0', function(err, text, headers) end, 'POST', json.encode({username = "ServerStart", content = "```["..servernavn.."]: Startede ["..scriptnavn.."]```"}), { ['Content-Type'] = 'application/json' })
               end
       end
   end)
